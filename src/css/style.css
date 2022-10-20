@@ -17,10 +17,11 @@ header{
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  height: 5rem;
 }
 
 header h1{
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: rgb(0, 0, 0);
   font-family: 'Playfair Display SC', sans-serif;
 }
@@ -45,18 +46,12 @@ header li a{
 
 .main-background-pic{
   width: 100%;
-  height: 80vh;
-}
-
-.main-background-pic img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 0px -450px;
+  height: 39rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/douglas-bagg-n6fIdqzIwD4-unsplash.jpg);
 }
 
 .main-info{
-  height: 100vh;
-  width: 100%;
-  background-color: rgb(243, 219, 219);
+  height: 20rem;
 }
