@@ -5,6 +5,7 @@
 body{
   min-height: 100vh;
   font-family: 'Playfair Display', sans-serif;
+  background-color: rgb(42, 42, 42);
 }
 
 header{
@@ -44,6 +45,11 @@ header li a{
   color: black;
 }
 
+header li a:hover{
+  color: aliceblue;
+  transition: 0.3s;
+}
+
 .main-background-pic{
   width: 100%;
   height: 39rem;
@@ -52,6 +58,27 @@ header li a{
   background-image: url(../assets/douglas-bagg-n6fIdqzIwD4-unsplash.jpg);
 }
 
-.main-info{
-  height: 20rem;
+.main-info-cards{
+  background-color: rgb(42, 42, 42);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-card{
+  height: 12rem;
+  flex: 0 1 40%;
+  position: relative;
+  margin: 25px auto;
+  background-color: rgb(42, 42, 42);
+  color: aliceblue;
+}
+
+.main-card h2{
+  text-align: center;
+}
+
+.main-card p{
+  text-align: center;
+  padding: 1rem;
 }
