@@ -9,14 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Playfair+Display+SC&display=swap" rel="stylesheet">
 
-    <script src="src/js/index.js" defer></script>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="src/js/index.js" defer></script>
     <title>Jareth Homes</title>
   </head>
   <body>
     <header>
-      <h1><a href="index.html">Jareth Homes</a></h1>
+      <h1 class="header"><a href="index.html">Jareth Homes</a></h1>
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
@@ -24,6 +23,17 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
+      <ul class="mobile-menu" id="mobileMenu">
+        <li ><svg class="exit-mobile-menu" xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+        </svg></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <a class="menu-icon" id="menuIcon" href=""><svg  xmlns="http://www.w3.org/2000/svg" width="2.0rem" height="2.0rem" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+      </svg></a>
     </header>
     <main>
       <div class="main-background-pic" id="mainBackgroundPic"></div>

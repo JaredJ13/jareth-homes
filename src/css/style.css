@@ -5,6 +5,8 @@ body{
 
 }
 
+/* Header */
+
 header{
   width: 100%;
   position: fixed;
@@ -50,6 +52,37 @@ header li a:hover{
   transition: 0.3s;
 }
 
+/* Mobile Menu */
+
+.mobile-menu{
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  padding: 1rem;
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 30%;
+  right: 0;
+  display: none;
+}
+
+.menu-icon{
+  display: none;
+  color: rgb(182, 177, 177);
+}
+
+.exit-mobile-menu{
+  color: rgb(134, 127, 127);
+  cursor: pointer;
+  margin-left: 6rem;
+}
+
+.exit-mobile-menu:hover{
+  color: white;
+  transition: 0.3s;
+}
+
+/* Main */
 .main-background-pic{
   width: 100%;
   height: 100vh;
@@ -60,12 +93,11 @@ header li a:hover{
 }
 
 .main-info{
-  margin-top: 1rem;
+  margin-top: 4rem;
   margin-bottom: 2rem;
 }
 
 .main-info-cards{
-  height: 30vh;
   width: 70%;
   background-color: rgb(42, 42, 42);
   display: flex;
@@ -91,6 +123,7 @@ header li a:hover{
   text-align: center;
 }
 
+/* Footer */
 footer{
   background-color: rgb(173, 157, 157);
 }
@@ -125,6 +158,55 @@ footer{
 .footer-icons a:hover{
   color: rgb(226, 218, 218);
   transition: 0.2s;
+}
+
+/* Media Queries */
+
+@media (max-width: 1200px){
+  header h1{
+    font-size: 1.5rem;
+  }
+
+  header li{
+    font-size: 1.3rem;
+    padding: 0 3rem 0 0;
+  }
+
+  .main-background-pic{
+    background-position: 60% 5%;
+  }
+}
+
+@media (max-width: 740px) {
+  header h1{
+    font-size: 1.5rem;
+  }
+
+  header li{
+    font-size: 1.2rem;
+    padding: 0 1rem 0 0;
+  }
+}
+
+@media (max-width: 642px) {
+  header nav{
+    display: none;
+  }
+
+  .mobile-menu li{
+    margin: 1rem;
+    
+  }
+
+  .menu-icon{
+    display: block;
+  }
+}
+
+@media (min-width: 642px){
+  .menu-icon{
+    display: none;
+  }
 }
 
 

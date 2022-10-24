@@ -1,8 +1,22 @@
-// index page parallax scroll
+// mobile menu
+const menuIcon = document.getElementById('menuIcon')
+const mobileMenu = document.getElementById('mobileMenu')
+const exitMobile = document.querySelector('.exit-mobile-menu')
 
-let imageContainer = document.getElementById('mainBackgroundPic');
+menuIcon.addEventListener('click', function (e) {
+    e.preventDefault()
 
-// window.addEventListener("scroll", function () {
-//     let offset = window.scrollY
-//     imageContainer.style.backgroundPositionY = offset * -1.2 + "px";
-// })
+    mobileMenu.style.display = 'none'
+
+    if (mobileMenu.style.display == "none") {
+        mobileMenu.style.display = "block"
+        menuIcon.style.display = "none"
+    }
+})
+
+exitMobile.addEventListener('click', function () {
+    if (mobileMenu.style.display == "block") {
+        mobileMenu.style.display = "none"
+        menuIcon.style.display = "block"
+    }
+})
