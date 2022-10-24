@@ -17,6 +17,6 @@ menuIcon.addEventListener('click', function (e) {
 exitMobile.addEventListener('click', function () {
     if (mobileMenu.style.display == "block") {
         mobileMenu.style.display = "none"
-        menuIcon.style.display = "block"
+        menuIcon.style.display = ""
     }
 })
