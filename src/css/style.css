@@ -203,11 +203,7 @@ footer{
   }
 }
 
-@media (min-width: 642px){
-  .menu-icon{
-    display: none;
-  }
-}
+
 
 
 
