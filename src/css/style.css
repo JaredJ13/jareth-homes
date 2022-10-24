@@ -1,11 +1,8 @@
-*{
-  box-sizing: border-box;
-}
-
 body{
   min-height: 100vh;
   font-family: 'Playfair Display', sans-serif;
   background-color: rgb(42, 42, 42);
+
 }
 
 header{
@@ -23,8 +20,12 @@ header{
 
 header h1{
   font-size: 2.5rem;
-  color: rgb(0, 0, 0);
   font-family: 'Playfair Display SC', sans-serif;
+}
+
+header h1 a{
+  color: rgb(173, 157, 157);
+  text-decoration: none;
 }
 
 header ul{
@@ -37,12 +38,11 @@ header ul{
 header li{
   padding: 0 8rem 0 0;
   font-size: 1.8rem;
-  color: rgb(0, 0, 0);
 }
 
 header li a{
   text-decoration: none;
-  color: black;
+  color: rgb(173, 157, 157);
 }
 
 header li a:hover{
@@ -52,26 +52,35 @@ header li a:hover{
 
 .main-background-pic{
   width: 100%;
-  height: 39rem;
+  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 0 5%;
   background-image: url(../assets/douglas-bagg-n6fIdqzIwD4-unsplash.jpg);
 }
 
+.main-info{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
 .main-info-cards{
+  height: 30vh;
+  width: 70%;
   background-color: rgb(42, 42, 42);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 6rem;
 }
 
 .main-card{
-  height: 12rem;
   flex: 0 1 40%;
-  position: relative;
   margin: 25px auto;
   background-color: rgb(42, 42, 42);
-  color: aliceblue;
+  color: rgb(238, 231, 231);
+  margin-bottom: 4rem;
 }
 
 .main-card h2{
@@ -80,5 +89,43 @@ header li a:hover{
 
 .main-card p{
   text-align: center;
-  padding: 1rem;
 }
+
+footer{
+  background-color: rgb(173, 157, 157);
+}
+
+.footer-content{
+  margin: 0 auto;
+  width: 19rem;
+  height: 7rem;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.footer p{
+  margin-right: 1rem;
+}
+
+.footer-icons{
+  display: flex;
+  align-content: center;
+}
+
+.footer-icons a{
+  color: black;
+  padding: 0.3rem;
+}
+
+.footer-icons a:hover{
+  color: rgb(226, 218, 218);
+  transition: 0.2s;
+}
+
+
+
